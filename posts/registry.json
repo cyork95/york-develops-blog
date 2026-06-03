@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello, World — Welcome to York Develops Blog",
+    "date": "2026-06-03",
+    "description": "The first post. What this blog is, why it exists, and what's coming next.",
+    "tags": ["meta", "intro"],
+    "section": "programming"
+  },
+  {
+    "slug": "the-quiet-compile",
+    "title": "The Quiet Compile",
+    "date": "2026-06-03",
+    "description": "A short story about a developer who discovers his code has been rewriting itself overnight.",
+    "tags": ["fiction", "short story"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "things-that-should-not-work",
+    "title": "Things That Absolutely Should Not Work (But Do)",
+    "date": "2026-06-03",
+    "description": "A running list of the most baffling, cursed, and beautiful hacks I've seen in the wild.",
+    "tags": ["lists", "humor"],
+    "section": "fun"
+  }
+]

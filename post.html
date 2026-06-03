@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading… — York Develops</title>
+  <meta name="description" content="York Develops Blog" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="York Develops" />
+
+  <link rel="icon" href="https://cyork95.github.io/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="container">
+      <a href="https://cyork95.github.io" class="site-name">
+        York<span>Develops</span>
+      </a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="https://cyork95.github.io" class="nav-link">Portfolio ↗</a>
+        <a href="index.html" class="nav-link active">Blog</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">☼</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── Main ───────────────────────────────────────────────── -->
+  <main>
+    <div class="container">
+
+      <a href="index.html" class="back-link">← All Posts</a>
+
+      <div id="post-header" class="post-header" style="display:none">
+        <time class="post-date" id="post-date"></time>
+        <h1 id="post-title"></h1>
+        <div class="post-tags" id="post-tags"></div>
+      </div>
+
+      <article id="post-content" class="prose">
+        <p class="loading">Loading post…</p>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-copy">© 2026 Cody York · No analytics · No tracking · No cookies</span>
+      <div class="footer-links">
+        <a href="https://github.com/cyork95" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://cyork95.github.io" target="_blank" rel="noopener">Portfolio ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- marked.js for markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+  <script src="post.js" defer></script>
+</body>
+</html>
