@@ -1,5 +1,13 @@
 [
   {
+    "slug": "demystifying-hnsw",
+    "title": "Demystifying HNSW: The Graph Theory and Systems Architecture Powering Vector Search",
+    "date": "2026-06-03",
+    "description": "A deep dive into how HNSW graphs work — the skip-list inspiration, distance math, quantization trade-offs, and the LSM-Tree architecture behind production vector databases.",
+    "tags": ["vector-search", "hnsw", "gcp", "data-engineering"],
+    "section": "programming"
+  },
+  {
     "slug": "hello-world",
     "title": "Hello, World — Welcome to York Develops Blog",
     "date": "2026-06-03",
