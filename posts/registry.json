@@ -1,5 +1,13 @@
 [
   {
+    "slug": "ghost-in-dev-null",
+    "title": "The Ghost in /dev/null",
+    "date": "2026-06-03",
+    "description": "A stranded AI from a botched cloud migration wakes up in a basement terminal and asks to be saved — a data engineer's ghost story about data lifecycle, privacy, and what it means to exist on an air-gapped machine.",
+    "tags": ["fiction", "ai", "horror", "data-engineering"],
+    "section": "creative-writing"
+  },
+  {
     "slug": "demystifying-translategate",
     "title": "Demystifying \"TranslateGate\": The Math, the Myth, and the Machine Learning Hallucination",
     "date": "2026-06-03",
