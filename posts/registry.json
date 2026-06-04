@@ -1,5 +1,13 @@
 [
   {
+    "slug": "data-mesh-or-mycelium",
+    "title": "Data Mesh or Mycelium? Building a Privacy-First Data Network in My Backyard (and My Cloud)",
+    "date": "2026-06-03",
+    "description": "A wet Zone 6b morning and a flush of wild mushrooms spark a deep dive into mycorrhizal networks as the perfect analogy for privacy-first, decentralized data mesh architecture — with working Python code.",
+    "tags": ["data-engineering", "privacy", "gcp", "python", "mqtt"],
+    "section": "programming"
+  },
+  {
     "slug": "topography-of-yesterdays-save-file",
     "title": "The Topography of Yesterday's Save File",
     "date": "2026-06-03",
