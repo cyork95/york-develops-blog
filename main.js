@@ -38,6 +38,7 @@ const SECTION_LABELS = {
   'programming':      'Programming',
   'creative-writing': 'Creative Writing',
   'fun':              'Fun',
+  'tea-garden':       'Tea & Garden',
 };
 
 /* ─── Rendering ──────────────────────────────────────────────── */
@@ -45,6 +46,7 @@ const SECTION_LABELS = {
 function tagClass(section) {
   if (section === 'creative-writing') return ' tag--creative-writing';
   if (section === 'fun') return ' tag--fun';
+  if (section === 'tea-garden') return ' tag--tea-garden';
   return '';
 }
 

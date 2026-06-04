@@ -1,5 +1,13 @@
 [
   {
+    "slug": "weekly-steep-high-school-tea",
+    "title": "The Weekly Steep: How a High School Job Taught Me the Art of the New Cup",
+    "date": "2026-06-03",
+    "description": "A Sunday morning ritual, a teenage job at an independent tea shop, and a Dragon Pearl Jasmine that unravels like a flower in the infuser — on the habit of drinking something new every week.",
+    "tags": ["tea", "dragon-pearl-jasmine", "ritual", "tasting-notes"],
+    "section": "tea-garden"
+  },
+  {
     "slug": "data-mesh-or-mycelium",
     "title": "Data Mesh or Mycelium? Building a Privacy-First Data Network in My Backyard (and My Cloud)",
     "date": "2026-06-03",
