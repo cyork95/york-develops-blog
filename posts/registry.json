@@ -1,5 +1,21 @@
 [
   {
+    "slug": "cartography-of-dreams-and-diablo",
+    "title": "The Cartography of Dreams and Diablo",
+    "date": "2026-06-03",
+    "description": "A frontier cartographer discovers his wilderness renders itself from his gaming sessions — Diablo's burning hells, Nuzlocke routes, and the terrible danger of playing horror games in an echo-chamber landscape.",
+    "tags": ["fiction", "gaming", "fantasy", "humor"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "demystifying-ebpf",
+    "title": "Demystifying eBPF: Why the Future of Cloud Observability Lives in the Linux Kernel",
+    "date": "2026-06-03",
+    "description": "How eBPF lets you run sandboxed code directly in the Linux kernel — a deep dive into the verifier, JIT compiler, XDP networking, and a working Python/BCC example that intercepts process executions in real-time.",
+    "tags": ["ebpf", "linux", "observability", "python", "cloud"],
+    "section": "programming"
+  },
+  {
     "slug": "weekly-steep-high-school-tea",
     "title": "The Weekly Steep: How a High School Job Taught Me the Art of the New Cup",
     "date": "2026-06-03",
