@@ -1,5 +1,13 @@
 [
   {
+    "slug": "demystifying-translategate",
+    "title": "Demystifying \"TranslateGate\": The Math, the Myth, and the Machine Learning Hallucination",
+    "date": "2026-06-03",
+    "description": "TranslateGate demystified — why typing gibberish into Google Translate between 2017–2019 returned unsettling English phrases, and how sparse low-resource training data from the Bible and UN documents poisoned the mathematical well.",
+    "tags": ["machine-learning", "nlp", "google-translate", "hallucination", "data-engineering"],
+    "section": "programming"
+  },
+  {
     "slug": "cartography-of-dreams-and-diablo",
     "title": "The Cartography of Dreams and Diablo",
     "date": "2026-06-03",
