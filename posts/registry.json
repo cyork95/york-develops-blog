@@ -1,5 +1,13 @@
 [
   {
+    "slug": "when-the-cron-job-leaks",
+    "title": "When the Cron Job Leaks into the Living Room",
+    "date": "2026-06-03",
+    "description": "What happens when your home automation script has a bug and no exit condition — a tale of 3 AM boss fight music, scalded white tea, and a Gyarados lost to a rogue loop.",
+    "tags": ["home-automation", "raspberry-pi", "humor", "cron"],
+    "section": "creative-writing"
+  },
+  {
     "slug": "demystifying-hnsw",
     "title": "Demystifying HNSW: The Graph Theory and Systems Architecture Powering Vector Search",
     "date": "2026-06-03",
