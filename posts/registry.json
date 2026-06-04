@@ -1,5 +1,13 @@
 [
   {
+    "slug": "phonetic-blueprint",
+    "title": "The Phonetic Blueprint: Why We Dream in Sharp Edges and Round Sounds",
+    "date": "2026-06-03",
+    "description": "A meditation on the Bouba/Kiki effect — how a cup of charcoal-roasted Dong Ding oolong unlocked a deep dive into the neuroscience of why sounds and shapes share geometry in the human brain.",
+    "tags": ["neuroscience", "language", "tea", "essay"],
+    "section": "creative-writing"
+  },
+  {
     "slug": "when-the-cron-job-leaks",
     "title": "When the Cron Job Leaks into the Living Room",
     "date": "2026-06-03",
