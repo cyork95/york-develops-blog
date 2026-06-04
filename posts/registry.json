@@ -1,5 +1,13 @@
 [
   {
+    "slug": "midnight-telemetry-garden",
+    "title": "The Midnight Telemetry of a Garden that Shouldn't Be",
+    "date": "2026-06-03",
+    "description": "A 2 AM data pipeline session goes strange when the backyard weather station starts reporting Peruvian altitude, 104°F heat, and UV index 14 — during a torrential Indiana downpour.",
+    "tags": ["sci-fi", "gardening", "home-automation", "essay"],
+    "section": "creative-writing"
+  },
+  {
     "slug": "ghostly-ballroom-kepler-186f",
     "title": "The Ghostly Ballroom of Kepler-186f",
     "date": "2026-06-03",
