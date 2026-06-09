@@ -1,5 +1,37 @@
 [
   {
+    "slug": "demystifying-vector-indexing-hnsw-ivf-pq",
+    "title": "Demystifying the Metal: Vector Indexing, Hardware Bottlenecks, and the HNSW vs. IVF-PQ Showdown",
+    "date": "2026-06-09",
+    "description": "A deep dive into HNSW and IVF-PQ vector indexes — why traditional B-trees fail in high-dimensional space, how product quantization achieves 95% memory compression, and why vector search is memory-bandwidth bound rather than compute-bound.",
+    "tags": ["vector-search", "hnsw", "data-engineering", "machine-learning", "gcp", "bigquery", "hardware"],
+    "section": "programming"
+  },
+  {
+    "slug": "overlook-at-mile-marker-42",
+    "title": "The Overlook at Mile Marker 42",
+    "date": "2026-06-09",
+    "description": "A solo road tripper pulls off the interstate at a foggy mountain overlook and finds an elaborately set dinner table for two, still steaming, with no one in sight — a quiet story about sitting with mysteries that don't resolve.",
+    "tags": ["fiction", "mystery", "road-trip", "weird-fiction", "short-story"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "hard-earned-medium-steak",
+    "title": "The Hard-Earned Medium: Why a Perfectly Seared Steak is My Ultimate Reward",
+    "date": "2026-06-09",
+    "description": "A meditation on why a perfectly cooked medium steak with charred asparagus functions as the ultimate reward meal — on thermal precision, earned celebrations, and the grounding power of cooking something simple but unforgiving.",
+    "tags": ["food", "cooking", "steak", "ritual", "productivity"],
+    "section": "fun"
+  },
+  {
+    "slug": "cryptography-of-the-canopy",
+    "title": "The Cryptography of the Canopy: When the Flora Starts Talking Back",
+    "date": "2026-06-09",
+    "description": "A marine botanist studying bioluminescent freshwater plants in a lab encounters something impossible — the plants begin broadcasting a classified Cold War-era deep-sea distress signal, encoded in their DNA from decades at the bottom of the ocean.",
+    "tags": ["fiction", "sci-fi", "botany", "data-engineering", "mystery"],
+    "section": "creative-writing"
+  },
+  {
     "slug": "life-is-strange-soundtracks-focus-fuel",
     "title": "Static Noise, Rain, and Oregon Coastlines: Why the 'Life is Strange' Soundtracks are My Ultimate Focus Fuel",
     "date": "2026-06-09",
