@@ -1,5 +1,13 @@
 [
   {
+    "slug": "moving-mountains-enterprise-ai-inventory",
+    "title": "Moving Mountains: What Building an Enterprise AI Inventory Taught Me About GKE, Data Governance, and Keeping My Sanity",
+    "date": "2026-06-09",
+    "description": "A year-long deep dive into building an enterprise AI model inventory at CVS Health — GKE job orchestration, Docker containerization, Jenkins-to-GitHub-Actions migration, and the real lesson nobody talks about: data governance is the hardest part of enterprise AI.",
+    "tags": ["gcp", "gke", "kubernetes", "docker", "data-governance", "flask", "angular", "github-actions"],
+    "section": "programming"
+  },
+  {
     "slug": "deconstructing-court-kay",
     "title": "Deconstructing the Uncanny: When YouTube's Darkest Conspiracies Collapse into Bizarre Reality",
     "date": "2026-06-03",
