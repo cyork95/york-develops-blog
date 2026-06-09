@@ -1,5 +1,13 @@
 [
   {
+    "slug": "coldplay-yellow-discord-golden-age",
+    "title": "11,000 Hertz and a Glowing Feed: Why Coldplay's 'Yellow' Belongs to the Discord Golden Age",
+    "date": "2026-06-09",
+    "description": "A love letter to the Discord golden age — how Coldplay's \"Yellow\" became the unofficial test track for late-night music bot sessions, and what those self-hosted servers taught about building communities that can't be rushed.",
+    "tags": ["music", "discord", "gaming", "nostalgia", "self-hosting"],
+    "section": "fun"
+  },
+  {
     "slug": "demystifying-vector-indexing-hnsw-ivf-pq",
     "title": "Demystifying the Metal: Vector Indexing, Hardware Bottlenecks, and the HNSW vs. IVF-PQ Showdown",
     "date": "2026-06-09",
