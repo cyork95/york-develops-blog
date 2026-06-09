@@ -1,5 +1,29 @@
 [
   {
+    "slug": "life-is-strange-soundtracks-focus-fuel",
+    "title": "Static Noise, Rain, and Oregon Coastlines: Why the 'Life is Strange' Soundtracks are My Ultimate Focus Fuel",
+    "date": "2026-06-09",
+    "description": "Why the Life is Strange soundtracks — Jonathan Morali's acoustic scores, José González, Daughter, and Alt-J — are the perfect deep-work and decompression tool, and how to build the ritualized environment that makes them work.",
+    "tags": ["music", "gaming", "productivity", "life-is-strange", "focus", "vinyl"],
+    "section": "fun"
+  },
+  {
+    "slug": "wetware-ghost-in-the-dish",
+    "title": "Wetware and the Ghost in the Dish: Why My Next Data Pipeline Might Be Alive",
+    "date": "2026-06-09",
+    "description": "A Cloud Data Engineer's late-night rabbit hole into Organoid Intelligence — how living human brain cells on multi-electrode arrays could replace power-hungry GPU clusters, dissolve the Von Neumann bottleneck, and upend the ethics of data infrastructure.",
+    "tags": ["biocomputing", "organoid-intelligence", "data-engineering", "cloud", "gcp", "ai", "ethics"],
+    "section": "programming"
+  },
+  {
+    "slug": "usb-c-of-ai-model-context-protocol",
+    "title": "The USB-C of AI: A Deep Dive into the Model Context Protocol (MCP) and Open-Agent Ecosystems",
+    "date": "2026-06-09",
+    "description": "A deep dive into Model Context Protocol — the open standard giving AI agents a universal interface to external tools and data sources, with JSON-RPC wire format, sandboxing strategies, and a working TypeScript server implementation.",
+    "tags": ["mcp", "ai-agents", "typescript", "json-rpc", "security", "data-engineering", "open-source"],
+    "section": "programming"
+  },
+  {
     "slug": "moving-mountains-enterprise-ai-inventory",
     "title": "Moving Mountains: What Building an Enterprise AI Inventory Taught Me About GKE, Data Governance, and Keeping My Sanity",
     "date": "2026-06-09",
