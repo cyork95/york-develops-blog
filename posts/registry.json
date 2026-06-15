@@ -1,5 +1,29 @@
 [
   {
+    "slug": "reading-the-room-self-taught-roadmap-human-sandbox",
+    "title": "Reading the Room: A Self-Taught Roadmap to the Human Sandbox",
+    "date": "2026-06-15",
+    "description": "How a background in data engineering accidentally became a launchpad for self-directed criminal psychology — tracing the path from folk sociology electives to behavioral analysis, interrogation study, and real-world pattern recognition.",
+    "tags": ["psychology", "criminal-psychology", "behavioral-analysis", "self-directed-learning", "true-crime", "body-language", "personal"],
+    "section": "creative-writing"
+  },
+  {
+    "slug": "shattering-motherboard-barrier-cxl-memory-pooling",
+    "title": "Shattering the Motherboard Barrier: Why CXL and Memory Pooling Are the Future of Datacenters",
+    "date": "2026-06-15",
+    "description": "How Compute Express Link (CXL) is dissolving the decades-old boundary between a CPU and its RAM — from the three sub-protocols under the hood, to Linux memory tiering with NUMA nodes, to the composable infrastructure future where stranded memory drops to zero.",
+    "tags": ["cxl", "hardware", "data-engineering", "cloud", "linux", "infrastructure", "memory", "datacenter"],
+    "section": "programming"
+  },
+  {
+    "slug": "morning-song-froze-elm-street",
+    "title": "The Morning the Song Froze over Elm Street",
+    "date": "2026-06-15",
+    "description": "A midsummer morning in Zone 6b goes sideways when the garden wakes up under a layer of geometric, musical crystals that hum through your fingertips — and briefly cuts Elm Street off from the rest of the connected world.",
+    "tags": ["creative-writing", "garden", "zone-6b", "fiction", "magical-realism", "tea", "data-engineering", "music", "nature"],
+    "section": "creative-writing"
+  },
+  {
     "slug": "five-day-window-spring-dogwoods",
     "title": "The Five-Day Window: Living in the Shade of the Spring Dogwoods",
     "date": "2026-06-15",
