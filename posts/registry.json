@@ -1,5 +1,13 @@
 [
   {
+    "title": "Moving Fast Without Breaking Production: How We Built a Multi-Environment Drift and Quality Checker in 24 Hours",
+    "slug": "driftguard-multi-environment-drift-checker",
+    "date": "2026-06-18",
+    "description": "Last week, my team and I tackled multi-environment cloud pipeline drift during a 24-hour hackathon, building Driftguard — a tool to audit development, QA, pre-prod, and production configurations using GCP APIs and agentic development loops.",
+    "tags": ["cloud", "devops", "gcp", "python", "bigquery", "cicd", "hackathon", "claude-code", "data-engineering"],
+    "section": "programming"
+  },
+  {
     "title": "Engineering Dynamics, Metallurgy, and Biomechanical Ergonomics of Multi-Scale Stringed Instruments",
     "slug": "multiscale-stringed-instruments-physics-ergonomics",
     "date": "2026-06-18",
