@@ -1,5 +1,13 @@
 [
   {
+    "title": "Beyond Rust: How CHERI Hardware is Fixing the C/C++ Memory Crisis at the Silicon Level",
+    "slug": "cheri-hardware-fixing-c-cpp-memory-crisis",
+    "date": "2026-06-18",
+    "description": "An architectural exploration of Capability Hardware Enhanced RISC Instructions (CHERI) — how 128-bit unforgeable capabilities, ARM Morello prototypes, and CheriBSD are tackling spatial memory safety at the logic-gate level.",
+    "tags": ["security", "hardware", "c-cpp", "rust", "cheri", "arm", "risc-v", "systems-programming", "operating-systems"],
+    "section": "programming"
+  },
+  {
     "title": "Moving Fast Without Breaking Production: How We Built a Multi-Environment Drift and Quality Checker in 24 Hours",
     "slug": "driftguard-multi-environment-drift-checker",
     "date": "2026-06-18",
