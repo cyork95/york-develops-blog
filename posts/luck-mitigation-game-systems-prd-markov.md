@@ -219,3 +219,34 @@ This dynamic scaling philosophy has also been adapted for card games. In Hearths
 ---
 
 These case studies highlight how game developers actively manipulate statistical curves behind the scenes. Whether compressing variance in real-time combat or enforcing diminishing returns in card systems, dynamic probability scaling remains a vital tool for balancing competitive depth with intuitive, satisfying gameplay. The mathematical elegance of PRD lies not in hiding randomness from the player, but in sculpting it — transforming raw entropy into an experience that feels fair precisely because it isn't truly random at all.
+
+---
+
+## Works Cited
+
+1. [Random Distribution — Liquipedia Dota 2 Wiki](https://liquipedia.net/dota2/Random_Distribution)
+2. [Pseudorandom Number Generator — Chessprogramming Wiki](https://www.chessprogramming.org/Pseudorandom_Number_Generator)
+3. [Luck In WarCraft 3 — Warcraft3.Info](https://warcraft3.info/articles/252/luck-in-warcraft-3)
+4. [Pseudo-random distribution / Manuel Blanc — Observable Notebooks](https://observablehq.com/@manuelblanc/pseudo-random-distribution)
+5. [Kangaroux/go-prd: Pseudo Random Distribution tool — GitHub](https://github.com/Kangaroux/go-prd)
+6. [Opinion On 1RN And 2RN? — Fire Emblem Universe](https://feuniverse.us/t/opinion-on-1rn-and-2rn/20432)
+7. [What's everyone's opinion on True Hit? — r/fireemblem](https://www.reddit.com/r/fireemblem/comments/3mm4zg/whats_everyones_opinion_on_true_hit/)
+8. [Generating Random Numbers in Computer — Medium](https://medium.com/@fawwazmts/generating-random-numbers-in-computer-cf4233ac46e8)
+9. [C/Randomization — Yale University](https://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)Randomization.html)
+10. [lxsmnsyc/PRD: A JS library for pseudo-random distribution — GitHub](https://github.com/lxsmnsyc/PRD)
+11. [Observable Notebooks: Fast data exploration and prototyping](https://observablehq.com/)
+12. [A Quasi-Random Number Generator — Taylor Petrick](https://taylorpetrick.com/blog/post/quasi-random-dist)
+13. [Pseudo Random Distribution — Liquipedia Warcraft Wiki](https://liquipedia.net/warcraft/Pseudo_Random_Distribution)
+14. [Pseudo random in Dota revisited — r/DotA2](https://www.reddit.com/r/DotA2/comments/7bj2ij/pseudo_random_in_dota_revisited/)
+15. [The π's The Limit / Eric Chen — Observable Notebooks](https://observablehq.com/@ericch99/stationary-distribution)
+16. [Pseudorandom number generator — Wikipedia](https://en.wikipedia.org/wiki/Pseudorandom_number_generator)
+17. [Chapter 3: Pseudo-random numbers generators — University of Arizona](https://archive.math.arizona.edu/tgk/mc/book_chap3.pdf)
+18. [Generating Random and Pseudorandom Numbers — UC Irvine](https://ics.uci.edu/~goodrich/teach/cs165/notes/Random.pdf)
+19. [d3-random — Observable Notebooks](https://observablehq.com/@d3/d3-random)
+20. [True Hit Rates — r/fireemblem](https://www.reddit.com/r/fireemblem/comments/1p91exx/true_hit_rates/)
+21. [True hit — Fire Emblem Wiki](https://fireemblemwiki.org/wiki/True_hit)
+22. [How to visualize video-game "true hit" system probabilities? — Mathematics Stack Exchange](https://math.stackexchange.com/questions/5130640/how-to-visualize-video-game-true-hit-system-probabilities)
+23. [True Hit Formula (2RN system) — r/fireemblem](https://www.reddit.com/r/fireemblem/comments/4jpw4f/true_hit_formula_2rn_system/)
+24. [Passive — Liquipedia Warcraft Wiki](https://liquipedia.net/warcraft/Passive)
+25. [Pseudo-random distribution in Dota 2 — CyberScore](https://cyberscore.live/en/glossary/pseudo-random-distribution/)
+26. [Hearthstone IS a rigged game (with proofs from Blizzard inside) — Reddit](https://www.reddit.com/r/hearthstone/comments/gcmjmg/hearthstone_is_a_rigged_game_with_proofs_from/)
