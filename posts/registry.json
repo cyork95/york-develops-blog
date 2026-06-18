@@ -1,5 +1,21 @@
 [
   {
+    "title": "Analysis of Luck Mitigation in Game Systems: Mathematical Architectures, Markov Models, and Interactive Verification",
+    "slug": "luck-mitigation-game-systems-prd-markov",
+    "date": "2026-06-17",
+    "description": "A rigorous mathematical examination of variance-mitigation algorithms in game design — from Pseudo-Random Distribution and Markov chain state-space models to Fire Emblem's 2RN True Hit system and the competitive balance implications for Dota 2, Hearthstone, and beyond.",
+    "tags": ["game-design", "mathematics", "probability", "pseudo-random-distribution", "markov-chains", "statistics", "dota2", "fire-emblem", "hearthstone", "game-theory"],
+    "section": "programming"
+  },
+  {
+    "title": "Ditching the Cloud Vault: Building a Local-First, Private Knowledge Graph with Markdown and Git",
+    "slug": "local-first-knowledge-graph-markdown-git",
+    "date": "2026-06-17",
+    "description": "How a data engineer's cloud paranoia led to building a sovereign, private knowledge graph from plain Markdown files, bidirectional WikiLinks, and a Git-powered conflict resolution layer — with zero vendor lock-in.",
+    "tags": ["local-first", "markdown", "git", "knowledge-graph", "privacy", "obsidian", "plain-text", "self-hosting", "data-engineering"],
+    "section": "programming"
+  },
+  {
     "slug": "reading-the-room-self-taught-roadmap-human-sandbox",
     "title": "Reading the Room: A Self-Taught Roadmap to the Human Sandbox",
     "date": "2026-06-15",
