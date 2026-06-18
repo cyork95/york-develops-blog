@@ -1,5 +1,13 @@
 [
   {
+    "title": "Engineering Dynamics, Metallurgy, and Biomechanical Ergonomics of Multi-Scale Stringed Instruments",
+    "slug": "multiscale-stringed-instruments-physics-ergonomics",
+    "date": "2026-06-18",
+    "description": "A rigorous physics and engineering analysis of multi-scale fanned-fret stringed instruments — from transverse and torsional wave propagation equations to metallurgy, Euler-Bernoulli beam theory for inharmonicity, and hand mechanics.",
+    "tags": ["physics", "engineering", "mathematics", "acoustics", "metallurgy", "ergonomics", "multi-scale", "instruments", "music"],
+    "section": "programming"
+  },
+  {
     "title": "Why Thedas Never Gets Old: The Comfort of Dark Fantasy and Cherry-Picked Universes",
     "slug": "why-thedas-never-gets-old-dragon-age-comfort",
     "date": "2026-06-18",
