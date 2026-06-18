@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Archival Index Aesthetic: Exposing Structure and Taxonomy in Modern Interface Design",
+    "slug": "archival-index-aesthetic-interface-design",
+    "date": "2026-06-18",
+    "description": "An examination of the Archival Index Aesthetic — its theoretical roots in Swiss International Typographic Style, core layout characteristics, machine experience (MX) alignment, and comparison of AI-driven UI design consistency platforms.",
+    "tags": ["design-systems", "UI-UX", "typography", "swiss-style", "archival-index", "web-design", "accessibility", "bento-grid", "frontend"],
+    "section": "programming"
+  },
+  {
     "title": "Beyond Rust: How CHERI Hardware is Fixing the C/C++ Memory Crisis at the Silicon Level",
     "slug": "cheri-hardware-fixing-c-cpp-memory-crisis",
     "date": "2026-06-18",
