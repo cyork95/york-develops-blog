@@ -1,5 +1,13 @@
 [
   {
+    "title": "Structural Architecture and Dynamic Reliability of Global Submarine Cable Networks",
+    "slug": "submarine-cable-networks-architecture-reliability",
+    "date": "2026-06-17",
+    "description": "A deep dive into the physical engineering of the ocean-floor fiber infrastructure powering 95% of global internet traffic — from 170 years of cable history and layered armor design to EDFA repeaters, cloud provider portfolios, and distributed systems resilience under physical disruption.",
+    "tags": ["submarine-cables", "networking", "cloud", "infrastructure", "fiber-optic", "data-engineering", "distributed-systems", "internet", "latency", "gcp"],
+    "section": "programming"
+  },
+  {
     "title": "Analysis of Luck Mitigation in Game Systems: Mathematical Architectures, Markov Models, and Interactive Verification",
     "slug": "luck-mitigation-game-systems-prd-markov",
     "date": "2026-06-17",
