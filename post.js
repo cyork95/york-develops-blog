@@ -99,10 +99,25 @@ if (!slug) {
       tagsEl.innerHTML = tags.map((t) => `<span class="tag">${t}</span>`).join('');
       headerEl.style.display = '';
 
-      document.getElementById('post-content').innerHTML = marked.parse(body);
+      const contentEl = document.getElementById('post-content');
+      contentEl.innerHTML = marked.parse(body);
+
+      // Render LaTeX math with KaTeX after marked.js has built the DOM
+      if (typeof renderMathInElement === 'function') {
+        renderMathInElement(contentEl, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$',  right: '$',  display: false },
+            { left: '\\[', right: '\\]', display: true },
+            { left: '\\(', right: '\\)', display: false },
+          ],
+          throwOnError: false,
+        });
+      }
 
       document.querySelector('meta[name="description"]')
         ?.setAttribute('content', meta.description || title);
+
     })
     .catch((err) => {
       if (err.message === '404') {
