@@ -1,5 +1,13 @@
 [
   {
+    "title": "Demystifying the Central Nervous System of Data: Event-Driven Architecture and the Schema Registry",
+    "slug": "event-driven-architecture-schema-registry",
+    "date": "2026-06-20",
+    "description": "An architectural deep dive into Event-Driven Architecture (EDA) and Schema Registries — exploring binary serialization (Avro/Protobuf), compatibility strategies, Change Data Capture (CDC), and how to set up a local governance lab.",
+    "tags": ["architecture", "event-driven", "kafka", "schema-registry", "avro", "protobuf", "debezium", "cdc", "devops"],
+    "section": "programming"
+  },
+  {
     "title": "The Myth of the Passive Queue: Why I Stopped Waiting for the Next Ticket",
     "slug": "myth-of-the-passive-queue-proactive-engineering",
     "date": "2026-06-20",
