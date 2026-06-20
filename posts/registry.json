@@ -1,5 +1,13 @@
 [
   {
+    "title": "Supply Chain of the Mind: Design Patterns for Just-In-Time Context Pipelines in LLM Operations",
+    "slug": "jit-context-pipelines-llm-operations",
+    "date": "2026-06-20",
+    "description": "An architectural guide applying Toyota's lean manufacturing principles (Muda, Mura, Muri) to context window engineering in LLMOps — covering Lost-in-the-Middle mitigation, multi-tier memory paging, and prompt compression pipelines.",
+    "tags": ["llmops", "architecture", "engineering", "system-design", "Letta", "MemGPT", "Valkey", "prompt-compression", "machine-learning"],
+    "section": "programming"
+  },
+  {
     "title": "Demystifying the Central Nervous System of Data: Event-Driven Architecture and the Schema Registry",
     "slug": "event-driven-architecture-schema-registry",
     "date": "2026-06-20",
