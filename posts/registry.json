@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Myth of the Passive Queue: Why I Stopped Waiting for the Next Ticket",
+    "slug": "myth-of-the-passive-queue-proactive-engineering",
+    "date": "2026-06-20",
+    "description": "A reflection on shifting from a reactive 'pull' task mindset to a proactive system custodian — why waiting for Jira tickets builds fragile data architectures, and how seeking out hidden gaps protects systems and career agency.",
+    "tags": ["career", "productivity", "data-engineering", "cloud", "python", "bigquery", "software-engineering", "philosophy"],
+    "section": "programming"
+  },
+  {
     "title": "The Archival Index Aesthetic: Exposing Structure and Taxonomy in Modern Interface Design",
     "slug": "archival-index-aesthetic-interface-design",
     "date": "2026-06-18",
