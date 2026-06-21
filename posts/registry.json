@@ -1,5 +1,13 @@
 [
   {
+    "title": "Beyond the Perimeter: Building a Zero-Trust, Cryptographic Data Mesh",
+    "slug": "zero-trust-cryptographic-data-mesh",
+    "date": "2026-06-21",
+    "description": "An architectural blueprint for Zero-Trust Data Architecture — shifting from perimeter Moat-and-Castle security to data self-protection, incorporating Attribute-Based Access Control (ABAC), OPA Rego policies, Privacy-Enhancing Technologies, and SPIFFE/SPIRE workload identities.",
+    "tags": ["security", "architecture", "zero-trust", "data-mesh", "ABAC", "OPA", "rego", "cryptography", "cloud", "gcp"],
+    "section": "programming"
+  },
+  {
     "title": "The Great Indoor Plant Sanctuary: Outsmarting Four Felines with a Cat-Proof Greenhouse",
     "slug": "cat-proof-greenhouse-indoor-plant-sanctuary",
     "date": "2026-06-21",
