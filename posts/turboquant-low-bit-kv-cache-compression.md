@@ -247,7 +247,8 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 1.5rem;
-      margin: 2rem 0;
+      margin: 2rem 0 2rem calc(50% - min(430px, 50vw - 1.5rem));
+      width: min(860px, 100vw - 3rem);
       font-family: var(--font-body);
       color: var(--text-primary);
       box-shadow: var(--shadow-lg);
@@ -277,7 +278,7 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
       grid-template-columns: 1.2fr 1fr;
       gap: 1.5rem;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 840px) {
       .calc-grid {
         grid-template-columns: 1fr;
       }
@@ -393,6 +394,16 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
       gap: 1rem;
       justify-content: space-between;
     }
+    .readout-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 480px) {
+      .readout-group {
+        grid-template-columns: 1fr;
+      }
+    }
     .readout-card {
       background-color: var(--bg-card);
       border: 1px solid var(--border);
@@ -401,6 +412,8 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
       display: flex;
       flex-direction: column;
       gap: 0.25rem;
+      min-width: 0;
+      overflow: hidden;
     }
     .readout-title {
       font-size: 0.75rem;
@@ -410,10 +423,11 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
     }
     .readout-val {
       font-family: var(--font-heading);
-      font-size: 1.8rem;
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
       font-weight: 700;
       color: var(--text-primary);
       line-height: 1.1;
+      word-break: break-all;
     }
     .readout-val.compressed {
       color: var(--accent);
@@ -536,7 +550,7 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
     <!-- Outputs (Right Side) -->
     <div class="calc-outputs">
       <!-- VRAM Readouts -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+      <div class="readout-group">
         <div class="readout-card">
           <div class="readout-title">Baseline VRAM</div>
           <div class="readout-val" id="baseline-vram">4.60 GB</div>
