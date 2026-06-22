@@ -1,5 +1,13 @@
 [
   {
+    "title": "The Spatial, Legal, and Geological Dynamics of the Centralia Coal-Seam Fire: A Comparative Analysis of Chronic Subterranean Combustion and Acute Fossil Fuel Disasters in Pennsylvania",
+    "slug": "centralia-coal-seam-fire-subterranean-combustion",
+    "date": "2026-06-21",
+    "description": "A geological, legal, and historical analysis of the Centralia coal-seam fire and a comparative study with acute Pennsylvania fossil fuel disasters, from the 1861 Rouseville well fire to the 1975 Philadelphia refinery disaster.",
+    "tags": ["centralia", "coal-fire", "geology", "history", "pennsylvania", "disasters", "refinery", "petroleum"],
+    "section": "programming"
+  },
+  {
     "title": "Structural Engineering Shifts in Real-Time Inference Infrastructure: An Evaluation of TurboQuant and Low-Bit Key-Value Cache Compressions",
     "slug": "turboquant-low-bit-kv-cache-compression",
     "date": "2026-06-21",
