@@ -102,6 +102,17 @@ if (!slug) {
       const contentEl = document.getElementById('post-content');
       contentEl.innerHTML = marked.parse(body);
 
+      // Execute any script tags in the parsed HTML
+      const scripts = contentEl.querySelectorAll('script');
+      scripts.forEach((oldScript) => {
+        const newScript = document.createElement('script');
+        Array.from(oldScript.attributes).forEach((attr) => {
+          newScript.setAttribute(attr.name, attr.value);
+        });
+        newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+      });
+
       // Render LaTeX math with KaTeX after marked.js has built the DOM
       if (typeof renderMathInElement === 'function') {
         renderMathInElement(contentEl, {

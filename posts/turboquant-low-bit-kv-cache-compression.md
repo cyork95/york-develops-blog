@@ -236,6 +236,431 @@ Across public embedding datasets, TurboQuant consistently outperforms traditiona
 
 ---
 
+## Interactive KV-Cache Infrastructure & Quantization Calculator
+
+Use the interactive calculator below to evaluate the VRAM requirement and system footprint of different KV cache quantization presets across various context lengths and concurrency configurations.
+
+<div class="calculator-container" id="calculator-widget">
+  <style>
+    .calculator-container {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      box-shadow: var(--shadow-lg);
+    }
+    .calc-title {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .calc-title span {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .calc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .calc-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .control-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .control-val {
+      font-family: var(--font-mono);
+      color: var(--accent);
+      font-size: 0.8rem;
+    }
+    /* radio buttons stylings */
+    .radio-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+    .radio-btn {
+      position: relative;
+    }
+    .radio-btn input {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .radio-label {
+      display: block;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-card);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .radio-btn input:checked + .radio-label {
+      border-color: var(--accent);
+      background-color: var(--accent-dim);
+      color: var(--accent);
+    }
+    /* select styling */
+    .calc-select {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      padding: 0.5rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      cursor: pointer;
+      outline: none;
+      transition: border-color var(--transition);
+    }
+    .calc-select:focus {
+      border-color: var(--accent);
+    }
+    /* slider styling */
+    .calc-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: var(--border);
+      outline: none;
+    }
+    .calc-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      cursor: pointer;
+      transition: transform var(--transition);
+    }
+    .calc-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+    }
+    .calc-slider::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      cursor: pointer;
+      border: none;
+      transition: transform var(--transition);
+    }
+    .calc-slider::-moz-range-thumb:hover {
+      transform: scale(1.2);
+    }
+    /* right column / outputs */
+    .calc-outputs {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+    .readout-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .readout-title {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .readout-val {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.1;
+    }
+    .readout-val.compressed {
+      color: var(--accent);
+      text-shadow: 0 0 10px rgba(0, 212, 170, 0.15);
+    }
+    /* comparative bar chart */
+    .chart-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    .chart-bar-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .chart-bar-label {
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      display: flex;
+      justify-content: space-between;
+    }
+    .chart-bar-track {
+      background-color: var(--border-subtle);
+      height: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+    .chart-bar-fill {
+      height: 100%;
+      border-radius: 5px;
+      transition: width 0.2s ease-out;
+    }
+    .chart-bar-fill.baseline {
+      background-color: var(--text-muted);
+    }
+    .chart-bar-fill.compressed {
+      background: linear-gradient(90deg, var(--purple), var(--accent));
+    }
+    /* status insight card */
+    .insight-card {
+      background-color: var(--accent-dim);
+      border: 1px solid rgba(0, 212, 170, 0.15);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--text-primary);
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+      transition: all var(--transition);
+    }
+    .insight-card.warning {
+      background-color: var(--purple-dim);
+      border-color: rgba(188, 140, 255, 0.15);
+    }
+    .insight-card.danger {
+      background-color: var(--amber-dim);
+      border-color: rgba(245, 158, 11, 0.15);
+    }
+    .insight-icon {
+      font-size: 1rem;
+      line-height: 1;
+    }
+    .insight-text {
+      flex: 1;
+    }
+  </style>
+
+  <div class="calc-title">
+    LLM KV-Cache & Quantization Calculator
+    <span>v1.2.0 • Interactive</span>
+  </div>
+
+  <div class="calc-grid">
+    <!-- Controls (Left Side) -->
+    <div class="calc-controls">
+      <!-- Model Size -->
+      <div class="control-group">
+        <label class="control-label">Model Architecture</label>
+        <div class="radio-group">
+          <label class="radio-btn">
+            <input type="radio" name="model-size" id="model-8b" value="8B" checked onclick="calculateKV()">
+            <span class="radio-label">Llama-3 8B</span>
+          </label>
+          <label class="radio-btn">
+            <input type="radio" name="model-size" id="model-70b" value="70B" onclick="calculateKV()">
+            <span class="radio-label">Llama-3 70B</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Context Window -->
+      <div class="control-group">
+        <div class="control-label">
+          Context Window
+          <span class="control-val" id="ctx-val">32,000 tokens</span>
+        </div>
+        <input type="range" class="calc-slider" id="ctx-slider" min="4000" max="128000" step="4000" value="32000" oninput="updateSliders(); calculateKV();">
+      </div>
+
+      <!-- Concurrency -->
+      <div class="control-group">
+        <div class="control-label">
+          Concurrency / Batch Size
+          <span class="control-val" id="batch-val">1 concurrent request</span>
+        </div>
+        <input type="range" class="calc-slider" id="batch-slider" min="1" max="64" step="1" value="1" oninput="updateSliders(); calculateKV();">
+      </div>
+
+      <!-- Quantization Preset -->
+      <div class="control-group">
+        <label class="control-label">Quantization Preset</label>
+        <select class="calc-select" id="preset-select" onchange="calculateKV()">
+          <option value="1.0">Uncompressed Baseline (FP16) — 1.0x</option>
+          <option value="0.385">turboquant_k8v4 (8-bit/4-bit) — 2.6x reduction (+1.17% PPL)</option>
+          <option value="0.263" selected>turboquant_4bit_nc (4-bit Balanced) — 3.8x reduction (+2.71% PPL)</option>
+          <option value="0.204">turboquant_3bit_nc (3-bit Extreme) — 4.9x reduction (+20.59% PPL)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Outputs (Right Side) -->
+    <div class="calc-outputs">
+      <!-- VRAM Readouts -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+        <div class="readout-card">
+          <div class="readout-title">Baseline VRAM</div>
+          <div class="readout-val" id="baseline-vram">4.60 GB</div>
+        </div>
+        <div class="readout-card">
+          <div class="readout-title">Compressed VRAM</div>
+          <div class="readout-val compressed" id="compressed-vram">1.21 GB</div>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>FP16 Baseline</span>
+            <span id="chart-base-label">4.60 GB</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill baseline" id="chart-base-fill" style="width: 100%"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Compressed Format</span>
+            <span id="chart-comp-label">1.21 GB</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill compressed" id="chart-comp-fill" style="width: 26%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Status Insight Card -->
+      <div class="insight-card" id="insight-card">
+        <span class="insight-icon" id="insight-icon">⚡</span>
+        <div class="insight-text" id="insight-text">
+          Fits smoothly on consumer-grade edge hardware (Apple Silicon / Single RTX 4090).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const container = document.getElementById('calculator-widget');
+      const ctxSlider = container.querySelector('#ctx-slider');
+      const batchSlider = container.querySelector('#batch-slider');
+      const ctxVal = container.querySelector('#ctx-val');
+      const batchVal = container.querySelector('#batch-val');
+      const presetSelect = container.querySelector('#preset-select');
+      const baselineVram = container.querySelector('#baseline-vram');
+      const compressedVram = container.querySelector('#compressed-vram');
+      const chartBaseLabel = container.querySelector('#chart-base-label');
+      const chartCompLabel = container.querySelector('#chart-comp-label');
+      const chartBaseFill = container.querySelector('#chart-base-fill');
+      const chartCompFill = container.querySelector('#chart-comp-fill');
+      const insightCard = container.querySelector('#insight-card');
+      const insightIcon = container.querySelector('#insight-icon');
+      const insightText = container.querySelector('#insight-text');
+
+      window.updateSliders = function() {
+        ctxVal.textContent = Number(ctxSlider.value).toLocaleString() + ' tokens';
+        batchVal.textContent = batchSlider.value + (batchSlider.value === '1' ? ' concurrent request' : ' concurrent requests');
+      };
+
+      window.calculateKV = function() {
+        const modelSize = container.querySelector('input[name="model-size"]:checked').value;
+        const contextWindow = parseFloat(ctxSlider.value);
+        const concurrency = parseFloat(batchSlider.value);
+        const presetFactor = parseFloat(presetSelect.value);
+
+        let baseline = 0;
+        if (modelSize === '8B') {
+          baseline = (contextWindow / 32000) * 4.6 * concurrency;
+        } else if (modelSize === '70B') {
+          baseline = (contextWindow / 128000) * 140 * concurrency;
+        }
+
+        const compressed = baseline * presetFactor;
+
+        baselineVram.textContent = baseline.toFixed(2) + ' GB';
+        compressedVram.textContent = compressed.toFixed(2) + ' GB';
+
+        chartBaseLabel.textContent = baseline.toFixed(2) + ' GB';
+        chartCompLabel.textContent = compressed.toFixed(2) + ' GB';
+
+        const maxVal = Math.max(baseline, 1);
+        const basePercentage = (baseline / maxVal) * 100;
+        const compPercentage = (compressed / maxVal) * 100;
+
+        chartBaseFill.style.width = basePercentage + '%';
+        chartCompFill.style.width = compPercentage + '%';
+
+        insightCard.className = 'insight-card';
+
+        if (compressed <= 16) {
+          insightIcon.textContent = '⚡';
+          insightText.textContent = 'Fits smoothly on consumer-grade edge hardware (Apple Silicon / Single RTX 4090).';
+        } else if (compressed > 16 && compressed <= 80) {
+          insightCard.classList.add('warning');
+          insightIcon.textContent = '🔮';
+          insightText.textContent = 'Consolidates workload onto a single enterprise accelerator (NVIDIA H100 / AMD MI300X).';
+        } else {
+          insightCard.classList.add('danger');
+          insightIcon.textContent = '🚨';
+          insightText.textContent = 'Requires a multi-GPU infrastructure cluster with high-speed interconnects.';
+        }
+      };
+
+      // Run initially
+      updateSliders();
+      calculateKV();
+    })();
+  </script>
+</div>
+
+---
+
 ## Analytical Conclusions
 
 The introduction of TurboQuant represents a major structural shift in the design of real-time inference infrastructure<sup>21</sup>. By applying high-dimensional geometric rotations, the algorithm transforms highly irregular key-value distributions containing severe activation outliers into predictable, uniform distributions<sup>2</sup>. This mathematical preconditioning allows systems to compress the KV cache down to ultra-low bit-widths without using per-model calibration data, establishing a new operational standard for enterprise serving engines<sup>3</sup>.
