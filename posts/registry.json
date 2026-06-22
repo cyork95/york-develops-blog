@@ -40,10 +40,10 @@
     "section": "programming"
   },
   {
-    "title": "Demystifying the Central Nervous System of Data: Event-Driven Architecture and the Schema Registry",
+    "title": "Total Order in Asynchronous Chaos: A Deep Dive into Schema Registries and EDA",
     "slug": "event-driven-architecture-schema-registry",
-    "date": "2026-06-20",
-    "description": "An architectural deep dive into Event-Driven Architecture (EDA) and Schema Registries — exploring binary serialization (Avro/Protobuf), compatibility strategies, Change Data Capture (CDC), and how to set up a local governance lab.",
+    "date": "2026-06-22",
+    "description": "Why JSON is a luxury high-throughput streams can't afford, how Schema Registries govern binary serialization (Avro/Protobuf), and how to resolve the dual-write problem using CDC and the Transactional Outbox pattern.",
     "tags": ["architecture", "event-driven", "kafka", "schema-registry", "avro", "protobuf", "debezium", "cdc", "devops"],
     "section": "programming"
   },
