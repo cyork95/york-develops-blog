@@ -485,12 +485,10 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
       flex: 1;
     }
   </style>
-
   <div class="calc-title">
     LLM KV-Cache & Quantization Calculator
     <span>v1.2.0 • Interactive</span>
   </div>
-
   <div class="calc-grid">
     <!-- Controls (Left Side) -->
     <div class="calc-controls">
@@ -508,7 +506,6 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
           </label>
         </div>
       </div>
-
       <!-- Context Window -->
       <div class="control-group">
         <div class="control-label">
@@ -517,7 +514,6 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
         </div>
         <input type="range" class="calc-slider" id="ctx-slider" min="4000" max="128000" step="4000" value="32000" oninput="updateSliders(); calculateKV();">
       </div>
-
       <!-- Concurrency -->
       <div class="control-group">
         <div class="control-label">
@@ -526,7 +522,6 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
         </div>
         <input type="range" class="calc-slider" id="batch-slider" min="1" max="64" step="1" value="1" oninput="updateSliders(); calculateKV();">
       </div>
-
       <!-- Quantization Preset -->
       <div class="control-group">
         <label class="control-label">Quantization Preset</label>
@@ -538,7 +533,6 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
         </select>
       </div>
     </div>
-
     <!-- Outputs (Right Side) -->
     <div class="calc-outputs">
       <!-- VRAM Readouts -->
@@ -552,7 +546,6 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
           <div class="readout-val compressed" id="compressed-vram">1.21 GB</div>
         </div>
       </div>
-
       <!-- Chart -->
       <div class="chart-container">
         <div class="chart-bar-group">
@@ -574,7 +567,6 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
           </div>
         </div>
       </div>
-
       <!-- Dynamic Status Insight Card -->
       <div class="insight-card" id="insight-card">
         <span class="insight-icon" id="insight-icon">⚡</span>
@@ -584,7 +576,6 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
       </div>
     </div>
   </div>
-
   <script>
     (function() {
       const container = document.getElementById('calculator-widget');
@@ -602,42 +593,32 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
       const insightCard = container.querySelector('#insight-card');
       const insightIcon = container.querySelector('#insight-icon');
       const insightText = container.querySelector('#insight-text');
-
       window.updateSliders = function() {
         ctxVal.textContent = Number(ctxSlider.value).toLocaleString() + ' tokens';
         batchVal.textContent = batchSlider.value + (batchSlider.value === '1' ? ' concurrent request' : ' concurrent requests');
       };
-
       window.calculateKV = function() {
         const modelSize = container.querySelector('input[name="model-size"]:checked').value;
         const contextWindow = parseFloat(ctxSlider.value);
         const concurrency = parseFloat(batchSlider.value);
         const presetFactor = parseFloat(presetSelect.value);
-
         let baseline = 0;
         if (modelSize === '8B') {
           baseline = (contextWindow / 32000) * 4.6 * concurrency;
         } else if (modelSize === '70B') {
           baseline = (contextWindow / 128000) * 140 * concurrency;
         }
-
         const compressed = baseline * presetFactor;
-
         baselineVram.textContent = baseline.toFixed(2) + ' GB';
         compressedVram.textContent = compressed.toFixed(2) + ' GB';
-
         chartBaseLabel.textContent = baseline.toFixed(2) + ' GB';
         chartCompLabel.textContent = compressed.toFixed(2) + ' GB';
-
         const maxVal = Math.max(baseline, 1);
         const basePercentage = (baseline / maxVal) * 100;
         const compPercentage = (compressed / maxVal) * 100;
-
         chartBaseFill.style.width = basePercentage + '%';
         chartCompFill.style.width = compPercentage + '%';
-
         insightCard.className = 'insight-card';
-
         if (compressed <= 16) {
           insightIcon.textContent = '⚡';
           insightText.textContent = 'Fits smoothly on consumer-grade edge hardware (Apple Silicon / Single RTX 4090).';
@@ -651,7 +632,6 @@ Use the interactive calculator below to evaluate the VRAM requirement and system
           insightText.textContent = 'Requires a multi-GPU infrastructure cluster with high-speed interconnects.';
         }
       };
-
       // Run initially
       updateSliders();
       calculateKV();
