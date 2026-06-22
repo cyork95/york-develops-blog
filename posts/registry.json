@@ -1,5 +1,13 @@
 [
   {
+    "title": "Structural Engineering Shifts in Real-Time Inference Infrastructure: An Evaluation of TurboQuant and Low-Bit Key-Value Cache Compressions",
+    "slug": "turboquant-low-bit-kv-cache-compression",
+    "date": "2026-06-21",
+    "description": "An in-depth evaluation of TurboQuant — its mathematical preconditioning under PolarQuant, QJL residual error correction, RaBitQ academic disputes, hardware fast Walsh-Hadamard transform adaptations, and vLLM integration presets.",
+    "tags": ["turboquant", "kv-cache", "quantization", "vllm", "Triton", "ICLR-2026", "GPU", "AMD", "RoCM", "machine-learning"],
+    "section": "programming"
+  },
+  {
     "title": "Beyond the Perimeter: Building a Zero-Trust, Cryptographic Data Mesh",
     "slug": "zero-trust-cryptographic-data-mesh",
     "date": "2026-06-21",
