@@ -48,11 +48,11 @@
     "section": "programming"
   },
   {
-    "title": "The Myth of the Passive Queue: Why I Stopped Waiting for the Next Ticket",
+    "title": "Proactive Engineering: Why I Stopped Waiting for the Next Ticket (And How It Saved My Tech Stack)",
     "slug": "myth-of-the-passive-queue-proactive-engineering",
-    "date": "2026-06-20",
-    "description": "A reflection on shifting from a reactive 'pull' task mindset to a proactive system custodian — why waiting for Jira tickets builds fragile data architectures, and how seeking out hidden gaps protects systems and career agency.",
-    "tags": ["career", "productivity", "data-engineering", "cloud", "python", "bigquery", "software-engineering", "philosophy"],
+    "date": "2026-06-22",
+    "description": "Why waiting for the next Jira ticket is a recipe for fragile architectures, and how proactively auditing cloud environments and personal tech stacks builds resilience, privacy, and career autonomy.",
+    "tags": ["career", "productivity", "data-engineering", "cloud", "python", "gcs", "privacy", "software-engineering", "philosophy"],
     "section": "programming"
   },
   {
