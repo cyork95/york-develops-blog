@@ -1,5 +1,13 @@
 [
   {
+    "title": "Moving Beyond the B-Tree: Why Modern Write-Heavy Architectures Demand LSM-Trees",
+    "slug": "moving-beyond-b-tree-write-heavy-lsm-trees",
+    "date": "2026-06-23",
+    "description": "An architectural exploration of why traditional B-Tree databases struggle under write-heavy workloads and how Log-Structured Merge-Trees (LSM-Trees) solve this through MemTables, SSTables, compaction, and Bloom filters.",
+    "tags": ["databases", "lsm-tree", "b-tree", "storage-engines", "system-design", "rocksdb", "cassandra", "bigtable"],
+    "section": "programming"
+  },
+  {
     "title": "Unified Framework for Crawl Budget Management and Indexation Governance: Resolving Robots.txt Exclusion Anomalies",
     "slug": "unified-framework-crawl-budget-management-indexation-governance-robots-txt",
     "date": "2026-06-23",
