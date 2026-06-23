@@ -1,5 +1,13 @@
 [
   {
+    "title": "Unified Framework for Crawl Budget Management and Indexation Governance: Resolving Robots.txt Exclusion Anomalies",
+    "slug": "unified-framework-crawl-budget-management-indexation-governance-robots-txt",
+    "date": "2026-06-23",
+    "description": "A comprehensive guide to managing crawl budgets, indexation anomalies (such as 'Indexed, though blocked by robots.txt'), platform constraints, link obfuscation, and edge-caching conflicts.",
+    "tags": ["seo", "crawl-budget", "robots-txt", "indexing", "web-performance", "shopify", "woocommerce", "cloudflare", "screaming-frog"],
+    "section": "programming"
+  },
+  {
     "title": "Mathematical Limits and Coordination Dynamics in Distributed Database Systems",
     "slug": "mathematical-limits-coordination-dynamics-distributed-database-systems",
     "date": "2026-06-22",
