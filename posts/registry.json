@@ -1,5 +1,13 @@
 [
   {
+    "title": "Mathematical Limits and Coordination Dynamics in Distributed Database Systems",
+    "slug": "mathematical-limits-coordination-dynamics-distributed-database-systems",
+    "date": "2026-06-22",
+    "description": "An analysis of consensus protocols (Raft, Paxos, Multi-Paxos, PBFT), performance tradeoffs, and systemic limits like the FLP Impossibility Theorem, the PACELC frontier, the PRAM bounds, and the SNOW Theorem.",
+    "tags": ["distributed-systems", "consensus", "paxos", "raft", "pbft", "pacelc", "pram", "snow-theorem", "databases", "system-design"],
+    "section": "programming"
+  },
+  {
     "title": "The Spatial, Legal, and Geological Dynamics of the Centralia Coal-Seam Fire: A Comparative Analysis of Chronic Subterranean Combustion and Acute Fossil Fuel Disasters in Pennsylvania",
     "slug": "centralia-coal-seam-fire-subterranean-combustion",
     "date": "2026-06-21",
