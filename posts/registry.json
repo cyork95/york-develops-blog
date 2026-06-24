@@ -1,5 +1,13 @@
 [
   {
+    "title": "Architectural Syntheses in High-Performance Language Model Infrastructure: Mixture of Experts versus Model Merging",
+    "slug": "mixture-of-experts-versus-model-merging",
+    "date": "2026-06-24",
+    "description": "A comprehensive deep dive comparing Mixture of Experts (MoE) and Model Merging, mapping their routing algorithms, weight-space merging techniques, upcycling strategies (FrankenMoEs), and hardware deployment profiles.",
+    "tags": ["mixture-of-experts", "model-merging", "system-design", "llamacpp", "vllm", "deepseek", "mergekit", "machine-learning"],
+    "section": "programming"
+  },
+  {
     "title": "Forensic Accounting & RAG Document Pipeline Hygiene: Applying Corporate Auditing Workflows to Enterprise Context Ingestion",
     "slug": "forensic-accounting-rag-document-pipeline-hygiene",
     "date": "2026-06-23",
