@@ -1,5 +1,13 @@
 [
   {
+    "title": "Computational Mycology: Transforming Multi-Agent AI Orchestration through Decentralized Mycelial Topologies and Semantic Routing",
+    "slug": "computational-mycology-decentralized-mycelial-topologies-semantic-routing",
+    "date": "2026-06-23",
+    "description": "How biophysical mycelial network dynamics, Spitzenkörper growth, anastomosis, and bioelectric memory map to decentralized agentic workflows, using semantic Ant Colony Optimization (ACO) routing.",
+    "tags": ["multi-agent", "orchestration", "bio-inspired", "decentralized", "system-design", "ant-colony-optimization", "gossip-protocols", "blockchain", "blockchain-mesh"],
+    "section": "programming"
+  },
+  {
     "title": "Moving Beyond the B-Tree: Why Modern Write-Heavy Architectures Demand LSM-Trees",
     "slug": "moving-beyond-b-tree-write-heavy-lsm-trees",
     "date": "2026-06-23",
