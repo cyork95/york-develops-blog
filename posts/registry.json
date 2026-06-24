@@ -1,5 +1,13 @@
 [
   {
+    "title": "Code vs. Cognitive Architecture: Defining the Deterministic Boundary in Agentic Systems",
+    "slug": "code-vs-cognitive-architecture-defining-the-deterministic-boundary-in-agentic-systems",
+    "date": "2026-06-24",
+    "description": "An architectural deep dive into the boundary between deterministic control planes and probabilistic cognitive loops, analyzing framework landscapes, cognitive loop mechanics, and thin agent design patterns.",
+    "tags": ["agentic-systems", "software-engineering", "langgraph", "pydantic-ai", "dspy", "system-design", "machine-learning", "architectures"],
+    "section": "programming"
+  },
+  {
     "title": "Automated Aerial Pageantry: Computational Mechanics, Distributed Edge Architectures, and the Environmental Optimization of Municipal Airspaces",
     "slug": "automated-aerial-pageantry-computational-mechanics-distributed-edge-architectures",
     "date": "2026-06-24",
