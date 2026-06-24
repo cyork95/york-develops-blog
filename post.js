@@ -96,7 +96,7 @@ if (!slug) {
       dateEl.textContent  = date ? formatDate(date) : '';
       dateEl.setAttribute('datetime', date);
 
-      tagsEl.innerHTML = tags.map((t) => `<span class="tag">${t}</span>`).join('');
+      tagsEl.innerHTML = tags.map((t) => `<a href="index.html?q=${encodeURIComponent(t)}" class="tag">${t}</a>`).join('');
       headerEl.style.display = '';
 
       const contentEl = document.getElementById('post-content');

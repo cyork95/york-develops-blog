@@ -51,6 +51,19 @@
         <button class="section-tab"        data-section="tea-garden"       role="tab" aria-selected="false">Tea &amp; Garden</button>
       </div>
 
+      <!-- ─── Search ──────────────────────────────────────────────── -->
+      <div class="search-container">
+        <div class="search-wrapper">
+          <span class="search-label">// search:</span>
+          <input type="text" id="search-input" placeholder="Search by tag, title, or content..." aria-label="Search posts" autocomplete="off" />
+          <button id="search-clear" class="search-clear-btn" aria-label="Clear search" type="button" style="display: none;">clear</button>
+        </div>
+        <div class="search-info" id="search-info" style="display: none;">
+          <span class="search-count" id="search-count">0 posts found</span>
+          <span class="search-indexing" id="search-indexing" style="display: none;">// indexing full text...</span>
+        </div>
+      </div>
+
       <p class="posts-section-label" id="section-heading">All Posts</p>
       <div id="post-list">
         <p class="loading">Loading posts…</p>
