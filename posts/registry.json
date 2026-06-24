@@ -1,5 +1,13 @@
 [
   {
+    "title": "Temporal Ergonomics in Deep-Thinking Language Interfaces: Harnessing Chronostasis and Attentional Gating for Next-Generation Frontend Systems",
+    "slug": "temporal-ergonomics-deep-thinking-language-interfaces",
+    "date": "2026-06-23",
+    "description": "How saccadic chronostasis and the Attentional Gate Model can be leveraged in frontend design to build engaging and low-friction interfaces for deep-thinking language models.",
+    "tags": ["frontend", "user-experience", "latency", "time-perception", "chronostasis", "attentional-gate", "react", "typescript", "css"],
+    "section": "programming"
+  },
+  {
     "title": "Computational Mycology: Transforming Multi-Agent AI Orchestration through Decentralized Mycelial Topologies and Semantic Routing",
     "slug": "computational-mycology-decentralized-mycelial-topologies-semantic-routing",
     "date": "2026-06-23",
