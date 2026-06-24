@@ -1,5 +1,13 @@
 [
   {
+    "title": "Forensic Accounting & RAG Document Pipeline Hygiene: Applying Corporate Auditing Workflows to Enterprise Context Ingestion",
+    "slug": "forensic-accounting-rag-document-pipeline-hygiene",
+    "date": "2026-06-23",
+    "description": "How corporate auditing practices, layout parsers, MinHash LSH deduplication, active reconciliation engines, and runtime validation layers ensure data hygiene in enterprise RAG pipelines.",
+    "tags": ["rag", "vector-databases", "deduplication", "forensic-accounting", "data-hygiene", "llamaparse", "openlineage", "python"],
+    "section": "programming"
+  },
+  {
     "title": "Temporal Ergonomics in Deep-Thinking Language Interfaces: Harnessing Chronostasis and Attentional Gating for Next-Generation Frontend Systems",
     "slug": "temporal-ergonomics-deep-thinking-language-interfaces",
     "date": "2026-06-23",
